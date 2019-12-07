@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Intlekt</string>
+    <string name="sonlarni_kiriting">Sonlarni kiriting</string>
+    <string name="epslon">epslon</string>
+    <string name="send">Save</string>
+    <string name="w_i">W(i)</string>
+    <string name="son">son</string>
+    <string name="save">o`rgan</string>
+    <string name="tek">check</string>
+    <string name="clear">Clear</string>
+</resources>

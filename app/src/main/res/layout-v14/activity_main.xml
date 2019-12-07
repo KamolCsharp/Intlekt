@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/SendBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/gridLayout"
+        android:background="#7AFC80"
+        android:text="@string/send"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_Son"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_son"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@id/gridLayout"
+        android:text="@string/save"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_tekshirish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_Son"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@id/gridLayout"
+        android:text="@string/tek"
+        android:textAllCaps="false" />
+    <Button
+        android:id="@+id/btn_tozalash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_tekshirish"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@id/gridLayout"
+        android:text="@string/clear"
+        android:textAllCaps="false" />
+
+    <EditText
+        android:id="@+id/input_son"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SendBtn"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@id/gridLayout"
+        android:hint="@string/son"
+        android:inputType="number"
+        android:maxLength="4" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:columnCount="8"
+        android:rowCount="8">
+
+    </GridLayout>
+<LinearLayout
+    android:id="@+id/leniya2"
+    android:layout_below="@id/leniya1"
+    android:layout_marginTop="5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/natija"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </HorizontalScrollView>
+    </ScrollView>
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/leniya1"
+    android:layout_below="@id/btn_tozalash"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ScrollView
+        android:id="@+id/ww"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/w_iiii"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#78FAEE"
+                android:text="@string/w_i"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </HorizontalScrollView>
+    </ScrollView>
+</LinearLayout>
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@id/gridLayout"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+</RelativeLayout>
